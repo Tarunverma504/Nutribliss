@@ -1,7 +1,126 @@
+.setImage{
+    width:100%;
+    height: 100%;
+}
 .footer{
-    height: 300px;
+    height: 500px;
+    position: relative;
 }
 .footer img{
     width: 100%;
-    height: 600px
+    height: 100%;
+}
+.footerContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height:60%
+}
+.footerContentWrapper{
+    width: 80%;
+    min-width: 740px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.LogoContact{
+    width: 25%;
+    background-color: blue;
+    height: auto;
+}
+
+.Divider{
+    background-color: white;
+    width: 1px;
+    height:50%;
+}
+.NavigationFindUs{
+    width:40%;
+    height: auto;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NavigationFindUs a{
+    text-decoration: none;
+    color: white;
+    margin-top: 8px;
+}
+
+.NavigationFindUs h2{
+    margin-bottom: 20px;
+}
+.FooterLogo{
+    width:150px;
+    height: 120px;
+    margin: auto;
+    background-color: burlywood;
+}
+
+.ContactIcons{
+    max-width: 250px;
+    width:80%;
+    height:40px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: deeppink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ContactIcons a{
+    /* background-color: cyan; */
+    width:25px;
+    height: 25px;
+}
+
+.navigation{
+    width:40%;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-right:20px;
+    background-color: grey;
+    align-items: center;
+}
+.FindUs{
+    width:40%;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .footerContentWrapper{
+        width: 100%;
+        min-width: 640px;
+    }
+    .NavigationFindUs{
+        max-width:400px;
+        width:60%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .FooterLogo{
+        width:130px;
+        height: 110px;
+        margin: auto;
+        background-color: burlywood;
+    }
 }
