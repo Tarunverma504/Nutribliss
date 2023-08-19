@@ -5,6 +5,7 @@
 .footer{
     height: 500px;
     position: relative;
+    margin-top: 80px;
 }
 .footer img{
     width: 100%;
@@ -15,7 +16,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: red;
     height:60%
 }
 .footerContentWrapper{
@@ -24,7 +24,6 @@
     height: 100%;
     margin: auto;
     position: relative;
-    background-color: yellow;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -33,7 +32,6 @@
 
 .LogoContact{
     width: 25%;
-    background-color: blue;
     height: auto;
 }
 
@@ -45,7 +43,6 @@
 .NavigationFindUs{
     width:40%;
     height: auto;
-    background-color: pink;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -59,12 +56,12 @@
 
 .NavigationFindUs h2{
     margin-bottom: 20px;
+    color:#0c4d36;
 }
 .FooterLogo{
     width:150px;
     height: 120px;
     margin: auto;
-    background-color: burlywood;
 }
 
 .ContactIcons{
@@ -73,7 +70,6 @@
     height:40px;
     margin: auto;
     margin-top: 20px;
-    background-color: deeppink;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -81,7 +77,6 @@
 }
 
 .ContactIcons a{
-    /* background-color: cyan; */
     width:25px;
     height: 25px;
 }
@@ -92,7 +87,6 @@
     display: flex;
     flex-direction: column;
     margin-right:20px;
-    background-color: grey;
     align-items: center;
 }
 .FindUs{
@@ -100,7 +94,6 @@
     min-width: 180px;
     display: flex;
     flex-direction: column;
-    background-color: grey;
     align-items: center;
 }
 
@@ -121,6 +114,65 @@
         width:130px;
         height: 110px;
         margin: auto;
-        background-color: burlywood;
+    }
+    .footerContentWrapper{
+        min-width: auto;
+    }
+    
+    .NavigationFindUs h2{
+        font-size: 20px;
+    }
+    .NavigationFindUs a{
+        font-size: 15px;
+    }
+    .FindUs{
+        min-width: 120px;
+    }
+    .navigation{
+        width:40%;
+        min-width: 180px;
+        margin-right:5px;
+    }
+
+    .LogoContact{
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .FooterImage{
+        display: none;
+    }
+    .footer{
+        background: #1D976C;  /* fallback for old browsers */
+        background: linear-gradient(to bottom, #57a875, #116044);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #57a875, #116044); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 450px;
+    }
+    
+    .footerContentWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        min-width: auto;
+        padding-top: 20px;
+        height: auto;
+    }
+    
+    .LogoContact{
+        min-width: 200px;
+    }
+    .Divider{
+        width:90%;
+        height: 2px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .NavigationFindUs{
+        width:100%;
+        margin-bottom: 20px;
     }
 }

@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.112),rgba(0, 0, 0, 0.112)),url("../Assets/home_bg.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: repeat;
+}
+
+.reviewheadings{
+    text-align: center;
+    margin: 50px auto 0px auto;
+    font-weight:bolder;
+}
+
+.reviewsDiv{
+    width:90%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin:auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reviewsDiv div{
+    width:400px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.66) 0px 5px 15px;
+    margin:20px;
+    background: rgba(255, 255, 255, 0.591);
+}
+
+.reviewsDiv div img{
+    width: 100%;
+    height: 100%;
+}
+
+.transformationImages{
+    width:100%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    margin-top: 20px;
+}   
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+.transformationImages div{
+    flex: 0 0 auto; /* Don't allow items to grow or shrink */
+    width:300px;
+    height:300px;
+    margin-left: 40px;
+    float: left;
+    margin-right: auto;
+
+}
+
+.transformationImages div img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.outerTransformation{
+    width:80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.scrollButtons{
+    height: auto;
+    width:120px;
+    float: right;
+}
+
+.scrollButtons button{
+    height: 40px;
+    width: 40px;
+    background:none;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.scrollButtons button img{
+    width:100%;
+    height: 100%;
+}

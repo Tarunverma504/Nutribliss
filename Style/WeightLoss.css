@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.112),rgba(0, 0, 0, 0.112)),url("../Assets/contact_us_bg.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: repeat;
+}
+
+.ContactUsContainer{
+    width:100%;
+}
+.imgAsCover{
+    width:100%;
+    height: 100%;
+}
+.contentHeading{
+    color: green;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.PageContent{
+    width: 80%;
+    margin: 50px auto;
+    word-wrap: break-word;
+    color: rgb(28, 103, 57);
+    font-weight: 500;
+}

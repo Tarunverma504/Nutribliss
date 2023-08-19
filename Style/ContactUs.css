@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.112),rgba(0, 0, 0, 0.112)),url("../Assets/contact_us_bg.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: repeat;
+}
+
+.ContactUsContainer{
+    width:100%;
+    margin-top: 20px;
+}
+.imgAsCover{
+    width:100%;
+    height: 100%;
+}
+
+.contactInfo{
+    width:85%;
+    margin: auto;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1300px;
+}
+
+.contactInfo div{
+    height:110px;
+    margin: 10px auto;
+    min-width:450px;
+}
+
+.contactInfo div img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1090px){
+    .contactInfo{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 930px){
+    .contactInfo{width:100%;}
+    .contactInfo div{
+        width:40%;
+        height:80px;
+        margin: 10px auto;
+        min-width:220px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .contactInfo div{
+        width:50%;
+        height:50px;
+        margin: 10px auto;
+        min-width:120px;
+    }
+}
