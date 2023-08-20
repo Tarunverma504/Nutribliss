@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollRightButton = document.getElementById('scroll-right');
   
     scrollLeftButton.addEventListener('click', function () {
-        console.log("sdfdsf");
-      container.scrollBy({ left: -200, behavior: 'smooth' }); // Adjust the value based on your item width
+      container.scrollBy({ left: -400, behavior: 'smooth' }); // Adjust the value based on your item width
     });
   
     scrollRightButton.addEventListener('click', function () {
-        console.log("d,mndfkgfgnfd,gf");
-      container.scrollBy({ left: 200, behavior: 'smooth' }); // Adjust the value based on your item width
+      container.scrollBy({ left: 400, behavior: 'smooth' }); // Adjust the value based on your item width
     });
   });
