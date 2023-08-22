@@ -184,4 +184,8 @@ body{
         width:95%;
         height:200px;
     }
+
+    .statisticsContainerDiv span{
+        text-align: center;
+    }
 }
