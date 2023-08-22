@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.112),rgba(0, 0, 0, 0.112)),url("../Assets/aboutusbg.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: repeat;
+    overflow-x: hidden; 
+}
+
+.AboutUsContainer{
+    width:90%;
+    height: auto;
+    margin: 40px auto;
+}
+
+.AboutUsContainer img{
+    float: right;
+    width: 450px;
+    height: 300px;
+    margin: 0px 0px 40px 40px;
+}
+
+.PageContent{
+    word-wrap: break-word;
+    color: rgb(28, 103, 57);
+    font-weight: 500;
+}
+
+.statistics{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px 10px;
+    background-color: green;
+    flex-wrap: wrap;
+}
+
+.statisticsContainerDiv{
+    width:180px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: 10px 10px;
+}
+
+.statisticsInnerdiv{
+    width:70%;
+    height:110px;
+}
+
+.statisticsInnerdiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.statisticsContainerDiv span{
+    color: white;
+    font-weight:500;
+}
+
+.transformationImages{
+    width:100%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    margin-top: 20px;
+}   
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+.transformationImages div{
+    flex: 0 0 auto; /* Don't allow items to grow or shrink */
+    width:410px;
+    height:250px;
+    margin-left: 40px;
+    float: left;
+    margin-right: auto;
+}
+
+.transformationImages div img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.outerTransformation{
+    width:80%;
+    margin: 100px auto;
+}
+
+.scrollButtons{
+    height: auto;
+    width:120px;
+    float: right;
+}
+
+.scrollButtons button{
+    height: 40px;
+    width: 40px;
+    background:none;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.scrollButtons button img{
+    width:100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1090px){
+    .AboutUsContainer img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .outerTransformation{
+        width:90%;
+    }
+
+    .transformationImages div{
+        width: 50%;
+    }
+
+    
+}
+@media only screen and (max-width: 800px){
+    .AboutUsContainer img{
+        width: 300px;
+        height: 200px;
+        margin: 0px 0px 30px 30px;
+    }
+
+    .transformationImages div{
+        width: 42%;
+        height: 150px;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .AboutUsContainer img{
+        width: 250px;
+        height: 180px;
+        margin: 0px 0px 30px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .AboutUsContainer{
+        width: 90%;
+    }
+    .AboutUsContainer img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        float: unset;
+        width: 300px;
+        height: 200px;
+        margin: 30px auto;
+    }
+
+    .statisticsContainerDiv{
+        width:150px;
+        height: 170px;
+        display: flex;
+    }
+
+    .transformationImages div{
+        width:95%;
+        height:200px;
+    }
+}
