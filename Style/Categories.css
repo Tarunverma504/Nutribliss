@@ -33,6 +33,7 @@ body{
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.66) 0px 5px 15px;
     cursor: pointer;
+    background-color: yellow;
 }
 
 .CategoryConatiner div img{
@@ -43,4 +44,14 @@ body{
 
 .CategoryConatiner div:hover{
     box-shadow: rgba(0, 0, 0, 0.66) 0px 35px 45px;
+}
+
+@media only screen and (max-width: 930px){
+    .CategoryConatiner{
+        width: 100%;
+    }
+    .CategoryConatiner div{
+        width:300px;
+        height: 180px;
+    }
 }
